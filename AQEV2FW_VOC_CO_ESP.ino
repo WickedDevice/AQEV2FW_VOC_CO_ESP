@@ -1396,7 +1396,7 @@ void initializeHardware(void) {
 
     Serial.println(F(" +------------------------------------+"));
     Serial.println(F(" |   Welcome to Air Quality Egg 2.0   |"));
-    Serial.println(F(" |     PM / VOC / CO Sensor Suite     |"));
+    Serial.println(F(" |       VOC / CO Sensor Suite        |"));
     Serial.print(  F(" |       Firmware Version "));
     Serial.print(firmware_version);
     Serial.println(F("       |"));
@@ -1598,7 +1598,7 @@ void initializeHardware(void) {
     SUCCESS_MESSAGE_DELAY(); // don't race past the splash screen, and give watchdog some breathing room
     initEsp8266();
 
-    updateLCD("PM / VOC / CO", 0);
+    updateLCD("VOC / CO", 0);
     updateLCD("MODEL", 1);
     SUCCESS_MESSAGE_DELAY();
 
