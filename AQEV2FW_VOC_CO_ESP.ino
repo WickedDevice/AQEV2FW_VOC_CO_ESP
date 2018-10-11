@@ -30,7 +30,7 @@
 // semantic versioning - see http://semver.org/
 #define AQEV2FW_MAJOR_VERSION 2
 #define AQEV2FW_MINOR_VERSION 3
-#define AQEV2FW_PATCH_VERSION 2
+#define AQEV2FW_PATCH_VERSION 3
 
 #define WLAN_SEC_AUTO (10) // made up to support auto-config of security
 
@@ -675,7 +675,7 @@ const uint8_t heartbeat_waveform[NUM_HEARTBEAT_WAVEFORM_SAMPLES] PROGMEM = {
 };
 uint8_t heartbeat_waveform_index = 0;
 
-#define SCRATCH_BUFFER_SIZE (512)
+#define SCRATCH_BUFFER_SIZE (1024)
 char scratch[SCRATCH_BUFFER_SIZE] = { 0 };  // scratch buffer, for general use
 uint16_t scratch_idx = 0;
 #define ESP8266_INPUT_BUFFER_SIZE (1000)
